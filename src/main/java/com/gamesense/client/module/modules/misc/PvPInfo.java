@@ -112,7 +112,7 @@ public class PvPInfo extends Module {
                     strengthPlayers.add(player);
                 }
                 if (player.isPotionActive(MobEffects.WEAKNESS) && !(weaknessPlayers.contains(player))) {
-                    MessageBus.sendClientPrefixMessage(ColorUtil.textToChatFormatting(chatColor) + player.getName() + " has (drank) wealness!");
+                    MessageBus.sendClientPrefixMessage(ColorUtil.textToChatFormatting(chatColor) + player.getName() + " has (drank) weakness!");
                     weaknessPlayers.add(player);
                 }
                 if (!(player.isPotionActive(MobEffects.STRENGTH)) && strengthPlayers.contains(player)) {
